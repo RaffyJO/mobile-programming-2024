@@ -33,6 +33,6 @@ void main() {
   int? intAngka = int.tryParse(stringAngka); // mengambil nilai int dari string
   print(intAngka); // output: null
 
-  int result = intAngka ?? 0 + 2; // null + 2 => 0 + 2
+  int result = (intAngka ?? 0) + 2; // null + 2 => 0 + 2
   print('hasil $result'); // output: hasil 2
 }
