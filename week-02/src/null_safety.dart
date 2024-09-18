@@ -20,16 +20,17 @@ void main() {
   // jika kita ingin mengubah variable yang boleh null menjadi tidak boleh null
   // terdapat 2 cara, yaitu dengan menggunakan operator ! atau memberi nilai default
   // contoh:
-  String? hewan;
-  String hewan2 = hewan ??
-      'cat'; // jika hewan bernilai null, maka hewan3 akan bernilai 'cat'
-  String hewan3 = hewan!; // akan error jika hewan bernilai null
+  // String? hewan;
+  // String hewan2 = hewan ??
+  //     'cat'; // jika hewan bernilai null, maka hewan3 akan bernilai 'cat'
+  // String hewan3 = hewan!; // akan error jika hewan bernilai null
 
-  print(hewan2);
-  print(hewan3);
+  // print(hewan);
+  // print(hewan2);
+  // print(hewan3);
 
   // Studi Kasus
-  String stringAngka = "ABC123"; // string yang tidak valid
+  String stringAngka = "ABC"; // string yang tidak valid
   int? intAngka = int.tryParse(stringAngka); // mengambil nilai int dari string
   print(intAngka); // output: null
 
